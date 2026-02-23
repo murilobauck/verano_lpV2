@@ -1,3 +1,4 @@
+import { BrowserRouter, Routes, Route } from "react-router";
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { Results } from "./components/Results";
@@ -9,48 +10,13 @@ import { FAQ } from "./components/FAQ";
 import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import { WhatsAppButton } from "./components/WhatsAppButton";
+import { PrivacyPolicy } from "./components/PrivacyPolicy";
+import { TermsOfService } from "./components/TermsOfService";
 
-function App() {
+function HomePage() {
   return (
-    <div
-      className="bg-black min-h-screen text-white"
-      style={{ fontFamily: "'Inter', system-ui, -apple-system, sans-serif" }}
-    >
-      <style>{`
-        html {
-          scroll-behavior: smooth;
-        }
-
-        /* Custom scrollbar */
-        ::-webkit-scrollbar {
-          width: 6px;
-        }
-        ::-webkit-scrollbar-track {
-          background: #000;
-        }
-        ::-webkit-scrollbar-thumb {
-          background: #222;
-          border-radius: 3px;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-          background: #333;
-        }
-
-        /* Selection */
-        ::selection {
-          background: rgba(66, 133, 244, 0.3);
-          color: #fff;
-        }
-
-        /* Input select option dark styling */
-        select option {
-          background-color: #0a0a0a;
-          color: #fff;
-        }
-      `}</style>
-
+    <>
       <Header />
-
       <main>
         <Hero />
         <Results />
@@ -61,10 +27,59 @@ function App() {
         <FAQ />
         <Contact />
       </main>
-
       <Footer />
       <WhatsAppButton />
-    </div>
+    </>
+  );
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <div
+        className="bg-black min-h-screen text-white"
+        style={{ fontFamily: "'Inter', system-ui, -apple-system, sans-serif" }}
+      >
+        <style>{`
+          html {
+            scroll-behavior: smooth;
+          }
+
+          /* Custom scrollbar */
+          ::-webkit-scrollbar {
+            width: 6px;
+          }
+          ::-webkit-scrollbar-track {
+            background: #000;
+          }
+          ::-webkit-scrollbar-thumb {
+            background: #222;
+            border-radius: 3px;
+          }
+          ::-webkit-scrollbar-thumb:hover {
+            background: #333;
+          }
+
+          /* Selection */
+          ::selection {
+            background: rgba(66, 133, 244, 0.3);
+            color: #fff;
+          }
+
+          /* Input select option dark styling */
+          select option {
+            background-color: #0a0a0a;
+            color: #fff;
+          }
+        `}</style>
+
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/privacidade" element={<PrivacyPolicy />} />
+          <Route path="/termos" element={<TermsOfService />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

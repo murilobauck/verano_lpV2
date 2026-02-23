@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 export function WhatsAppButton() {
   return (
     <motion.a
-      href="https://wa.me/5511999999999?text=Olá! Gostaria de saber mais sobre os serviços da Verano Company."
+      href="https://wa.me/5519995748782?text=Olá! Gostaria de saber mais sobre os serviços da Verano Company."
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Fale conosco pelo WhatsApp"

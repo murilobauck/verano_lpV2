@@ -24,15 +24,15 @@ const footerLinks = {
     { label: "Planos", href: "#pricing" },
   ],
   Legal: [
-    { label: "Política de Privacidade", href: "#" },
-    { label: "Termos de Serviço", href: "#" },
+    { label: "Política de Privacidade", href: "/privacidade" },
+    { label: "Termos de Serviço", href: "/termos" },
   ],
 };
 
 const socials = [
   {
     label: "Instagram",
-    href: "https://instagram.com",
+    href: "https://instagram.com/veranocompany",
     Icon: IconInstagram,
   },
 ];

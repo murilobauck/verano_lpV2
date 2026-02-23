@@ -5,7 +5,7 @@ const plans = [
   {
     name: "Essencial",
     tag: null,
-    price: "R$ 797",
+    price: "R$ 697",
     period: "/mês",
     description: "Para empresas que querem iniciar com o pé direito no Google.",
     color: "#4285F4",
@@ -23,7 +23,7 @@ const plans = [
   {
     name: "Dominance",
     tag: "Mais escolhido",
-    price: "R$ 1.497",
+    price: "R$ 1.500",
     period: "/mês",
     description: "Para negócios sérios que querem liderar o mercado local.",
     color: "#FBBC05",
@@ -53,8 +53,6 @@ const plans = [
       "Múltiplos perfis / unidades",
       "Estratégia de SEO Local integrada",
       "Gestão de campanhas Google Ads local",
-      "Fotografia profissional trimestral",
-      "Dashboard em tempo real",
       "Acesso direto ao time sênior",
     ],
     cta: "Falar com especialista",
@@ -97,14 +95,16 @@ export function Pricing() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1, duration: 0.5 }}
-              className={`relative rounded-2xl p-8 flex flex-col gap-6 transition-all duration-300 ${
+              style={{
+                borderColor: plan.highlight ? `${plan.color}40` : "rgba(255,255,255,0.06)",
+                willChange: "opacity, transform",
+                transform: "translateZ(0)",
+              }}
+              className={`relative rounded-2xl p-8 flex flex-col gap-6 transition-colors duration-300 ${
                 plan.highlight
                   ? "bg-white/[0.04] border-2 shadow-[0_0_60px_rgba(251,188,5,0.08)]"
                   : "bg-white/[0.02] border hover:bg-white/[0.03]"
               }`}
-              style={{
-                borderColor: plan.highlight ? `${plan.color}40` : "rgba(255,255,255,0.06)",
-              }}
             >
               {plan.tag && (
                 <div
@@ -151,7 +151,9 @@ export function Pricing() {
 
               {/* CTA */}
               <a
-                href="#contact"
+                href={`https://wa.me/5519995748782?text=Olá!%20Quero%20contratar%20o%20plano%20${encodeURIComponent(plan.name)}.`}
+                target="_blank"
+                rel="noopener noreferrer"
                 className={`group w-full mt-2 flex items-center justify-center gap-2 py-3.5 rounded-xl text-sm font-semibold transition-all duration-300 ${
                   plan.highlight
                     ? "text-black hover:opacity-90"

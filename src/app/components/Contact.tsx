@@ -71,7 +71,7 @@ export function Contact() {
                 <div>
                   <p className="text-xs text-gray-500 mb-0.5">E-mail</p>
                   <p className="text-gray-200 text-sm group-hover:text-white transition-colors">
-                    contato@veranocompany.com
+                    contato@veranocompany.com.br
                   </p>
                 </div>
               </a>
@@ -88,7 +88,7 @@ export function Contact() {
                 <div>
                   <p className="text-xs text-gray-500 mb-0.5">WhatsApp</p>
                   <p className="text-gray-200 text-sm group-hover:text-white transition-colors">
-                    +55 (19) 99150-1988
+                    +55 (19) 99574-8782
                   </p>
                 </div>
               </a>
@@ -135,7 +135,7 @@ export function Contact() {
 
             {/* WhatsApp Button */}
             <a
-              href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20solicitar%20um%20diagnóstico%20gratuito%20do%20meu%20perfil%20no%20Google."
+              href="https://wa.me/5519995748782?text=Olá!%20Gostaria%20de%20solicitar%20um%20diagnóstico%20gratuito%20do%20meu%20perfil%20no%20Google."
               target="_blank"
               rel="noopener noreferrer"
               className="group relative flex items-center justify-center gap-3 px-8 py-4 rounded-xl text-base font-bold text-white bg-[#34A853] overflow-hidden transition-all duration-300 hover:shadow-[0_0_40px_rgba(52,168,83,0.3)] hover:scale-[1.02]"
