@@ -49,7 +49,7 @@ export function TermsOfService() {
               <div className="space-y-3">
                 <p><strong>3.1 Planos Disponíveis:</strong> Oferecemos três planos principais (Essencial, Dominance e Authority), cada um com recursos específicos detalhados em nosso site.</p>
                 <p><strong>3.2 Faturamento:</strong> Os serviços são cobrados mensalmente, com pagamento antecipado até o dia 5 de cada mês.</p>
-                <p><strong>3.3 Formas de Pagamento:</strong> Aceitamos pagamentos via PIX, transferência bancária e cartão de crédito.</p>
+                <p><strong>3.3 Formas de Pagamento:</strong> Aceitamos pagamentos via PIX ou transferência bancária.</p>
                 <p><strong>3.4 Atraso no Pagamento:</strong> O não pagamento até a data de vencimento resultará na suspensão dos serviços após 5 dias úteis.</p>
                 <p><strong>3.5 Reajuste:</strong> Os valores podem ser reajustados anualmente com base no IGPM ou outro índice acordado.</p>
               </div>
