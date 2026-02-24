@@ -48,11 +48,12 @@ function Counter({ target, suffix = "", prefix = "", decimals = 0, color }: Coun
 
 const stats = [
   {
-    value: 340,
-    suffix: "+",
-    label: "Empresas Atendidas",
-    description: "de diferentes segmentos em todo o Brasil",
+    value: 3.7,
+    suffix: "M+",
+    label: "Visualizações geradas",
+    description: "Tráfego qualificado para os nossos parceiros.",
     color: "#4285F4",
+    decimals: 1,
   },
   {
     value: 312,
