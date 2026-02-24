@@ -25,7 +25,7 @@ export function PrivacyPolicy() {
             <section>
               <h2 className="text-2xl font-semibold text-white mb-4">1. Introdução</h2>
               <p>
-                A Verano Company ("nós", "nosso" ou "empresa") está comprometida em proteger a privacidade e segurança
+                A Verano Company está comprometida em proteger a privacidade e segurança
                 dos dados pessoais de nossos clientes. Esta Política de Privacidade descreve como coletamos, usamos,
                 armazenamos e protegemos suas informações pessoais após a contratação de nossos serviços, em
                 conformidade com a Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018).
