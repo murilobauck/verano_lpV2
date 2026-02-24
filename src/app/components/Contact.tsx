@@ -77,7 +77,7 @@ export function Contact() {
               </a>
 
               <a
-                href="https://wa.me/5519991501988"
+                href="https://wa.me/5519995748782?text=Olá!%20Gostaria%20de%20solicitar%20um%20diagnóstico%20gratuito%20do%20meu%20perfil%20no%20Google."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 group"

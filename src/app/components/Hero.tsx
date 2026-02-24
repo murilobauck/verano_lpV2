@@ -95,7 +95,7 @@ export function Hero() {
         </motion.div>
       ))}
 
-      <div className="container mx-auto px-6 relative z-10 text-center max-w-5xl">
+      <div className="container mx-auto px-6 relative z-[5] text-center max-w-5xl pt-20 md:pt-0">
         <motion.div variants={containerVariants} initial="hidden" animate="visible">
           {/* Badge */}
           <motion.div variants={itemVariants} className="mb-8 inline-flex">
