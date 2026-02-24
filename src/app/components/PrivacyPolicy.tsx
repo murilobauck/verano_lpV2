@@ -155,7 +155,7 @@ export function PrivacyPolicy() {
               </p>
               <div className="bg-white/[0.03] border border-white/[0.08] rounded-xl p-6 space-y-2">
                 <p><strong>Verano Company</strong></p>
-                <p>E-mail: privacidade@veranocompany.com</p>
+                <p>E-mail: contato@veranocompany.com.br</p>
                 <p>WhatsApp: +55 (19) 99574-8782</p>
                 <p>Endereço: Campinas, SP - Brasil</p>
               </div>
