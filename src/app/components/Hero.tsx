@@ -135,11 +135,12 @@ export function Hero() {
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
             <a
-              href="#contact"
+              href="https://wa.me/5519995748782?text=Olá,%20tenho%20interresse%20em%20aplicar%20para%20uma%20vaga%20na%20Verano.
+"
               className="group relative inline-flex items-center gap-3 px-8 py-4 bg-white text-black text-sm font-bold rounded-xl overflow-hidden transition-all duration-300 hover:scale-[1.03] hover:shadow-[0_0_40px_rgba(255,255,255,0.2)]"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-[#4285F4] via-[#EA4335] to-[#FBBC05] opacity-0 group-hover:opacity-15 transition-opacity duration-400" />
-              <span className="relative">Solicitar Diagnóstico Gratuito</span>
+              <span className="relative">Aplicar para vaga</span>
               <ArrowRight
                 size={16}
                 className="relative group-hover:translate-x-1 transition-transform duration-200"
