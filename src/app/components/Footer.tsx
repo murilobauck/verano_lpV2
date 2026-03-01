@@ -56,7 +56,7 @@ export function Footer() {
               </span>
             </a>
             <p className="text-gray-500 text-sm leading-relaxed max-w-xs mb-6">
-              Posicionamos empresas locais no topo do Google Maps com estratégia, dados e execução de alto nível.
+              Posicionamos empresas locais no topo do Google Maps com estratégia, dados e consultoria de alto nível.
             </p>
             <div className="flex items-center gap-3">
               {socials.map((social) => (

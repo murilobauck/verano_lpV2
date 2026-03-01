@@ -33,14 +33,14 @@ export function TermsOfService() {
 
             <section>
               <h2 className="text-2xl font-semibold text-white mb-4">2. Descrição dos Serviços</h2>
-              <p className="mb-3">A Verano Company oferece serviços de gestão e otimização de perfis do Google Meu Negócio, incluindo:</p>
+              <p className="mb-3">A Verano Company oferece serviços de consultoria estratégica e otimização de perfis do Google Meu Negócio, incluindo:</p>
               <ul className="list-disc list-inside space-y-2 ml-4">
-                <li>Auditoria e otimização de perfis</li>
-                <li>Criação e publicação de postagens</li>
-                <li>Gestão de avaliações e respostas</li>
-                <li>Relatórios de desempenho</li>
-                <li>Estratégias de SEO local</li>
-                <li>Suporte e consultoria especializada</li>
+                <li>Auditoria e otimização algorítmica de perfis</li>
+                <li>Curadoria e elaboração de cronogramas de conteúdo e promoções</li>
+                <li>Consultoria de reputação e estratégia para gestão de avaliações</li>
+                <li>Relatórios analíticos mensais de desempenho</li>
+                <li>Estratégias avançadas de SEO local</li>
+                <li>Suporte e inteligência comercial de mercado</li>
               </ul>
             </section>
 

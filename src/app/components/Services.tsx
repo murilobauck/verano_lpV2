@@ -67,9 +67,9 @@ function IconShield({ color }: { color: string }) {
 const services = [
   {
     number: "01",
-    title: "Auditoria & Otimização",
+    title: "Otimização de Algoritmo (Google Profile)",
     description:
-      "Diagnóstico completo do seu perfil. Identificamos erros críticos, ajustamos categorias, palavras-chave estratégicas e configurações que impactam diretamente seu posicionamento.",
+      "Planejamento estratégico no Perfil da Empresa no Google (Google Meu Negócio) com o objetivo estrito de aumentar a relevância do perfil, otimizar o ranqueamento local e elevar a pontuação da empresa no algoritmo de busca.",
     Icon: IconAudit,
     color: "#4285F4",
     tag: "Fundação",
@@ -85,21 +85,21 @@ const services = [
   },
   {
     number: "03",
-    title: "Conteúdo & Postagens",
+    title: "Curadoria e Cronograma de Conteúdo",
     description:
-      "Calendário editorial com postagens regulares, promoções e atualizações. Mantemos seu perfil ativo, relevante e com alto score de engajamento no algoritmo do Google.",
+      "Orientação técnica exata sobre quais fotografias devem ser utilizadas e em quais dias da semana elas devem ir ao ar para maximizar a retenção e o engajamento.",
     Icon: IconContent,
     color: "#EA4335",
     tag: "Presença",
   },
   {
     number: "04",
-    title: "Fotografia Estratégica",
+    title: "Consultoria Promocional",
     description:
-      "Perfis com fotos de qualidade recebem até 42% mais solicitações de rota. Coordenamos um book fotográfico estratégico do seu espaço, equipe e produtos.",
+      "Planejamento e estruturação de promoções comerciais embasadas em dados, garantindo maior conversão e atração da demanda local reprimida.",
     Icon: IconCamera,
     color: "#34A853",
-    tag: "Visual",
+    tag: "Comercial",
   },
   {
     number: "05",
@@ -112,9 +112,9 @@ const services = [
   },
   {
     number: "06",
-    title: "Gestão de Avaliações",
+    title: "Estratégia de Avaliações",
     description:
-      "Respondemos cada review com profissionalismo e tom estratégico. Construímos reputação sólida, geramos confiança imediata e transformamos avaliações em ferramenta de conversão.",
+      "Estruturamos processos de captação e orientamos as respostas de cada review com técnica. Construímos reputação sólida, geramos confiança e transformamos avaliações em ferramenta de conversão algorítmica.",
     Icon: IconReputation,
     color: "#EA4335",
     tag: "Conversão",

@@ -49,7 +49,7 @@ export function Hero() {
   };
   const itemVariants = {
     hidden: { y: 30, opacity: 0 },
-    visible: { y: 0, opacity: 1, transition: { duration: 0.7, ease: [0.25, 0.1, 0.25, 1] } },
+    visible: { y: 0, opacity: 1, transition: { duration: 0.7, ease: [0.25, 0.1, 0.25, 1] as const } },
   };
 
   return (
@@ -126,7 +126,7 @@ export function Hero() {
             className="text-base md:text-lg text-gray-400 mb-10 max-w-xl mx-auto leading-relaxed"
           >
             Posicionamos sua empresa no topo do{" "}
-            <span className="text-white">Google Maps</span> com estratégia, dados e execução de alto nível. Resultados mensuráveis. Clientes qualificados.
+            <span className="text-white">Google Maps</span> com estratégia, dados e inteligência de alto nível. Resultados mensuráveis. Clientes qualificados.
           </motion.p>
 
           {/* CTAs */}

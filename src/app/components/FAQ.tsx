@@ -15,7 +15,7 @@ const faqs = [
   {
     question: "Como funciona a remoção de avaliações falsas?",
     answer:
-      "Identificamos avaliações que violam as diretrizes do Google — como reviews falsos, de concorrentes ou difamatórios sem relação com o estabelecimento. Atuamos com o processo oficial de denúncia e, quando necessário, escalamos o caso diretamente com o suporte do Google.",
+      "Identificamos avaliações que violam as diretrizes do Google — como reviews falsos, de concorrentes ou difamatórios sem relação com o estabelecimento. Orientamos o processo oficial de denúncia e a documentação necessária para escalar o caso junto ao suporte do Google.",
   },
   {
     question: "Preciso dar acesso ao meu perfil do Google?",

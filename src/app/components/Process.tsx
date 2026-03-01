@@ -34,7 +34,7 @@ const steps = [
     number: "03",
     title: "Construção de Autoridade",
     description:
-      "Executamos campanhas de geração de avaliações, publicamos conteúdo estratégico e construímos sinais de relevância local que elevam seu ranking progressivamente.",
+      "Desenhamos suas campanhas promocionais, arquitetamos seu cronograma de postagens e construímos sinais de relevância local e avaliações legítimas que elevam seu ranking no algoritmo.",
     color: "#FBBC05",
     outcome: "Crescimento orgânico constante",
     icon: (

@@ -12,8 +12,8 @@ const plans = [
     features: [
       "Auditoria completa do perfil",
       "Otimização inicial full",
-      "1 postagem semanal",
-      "Resposta a avaliações",
+      "Cronograma estratégico (1 post/sem)",
+      "Análise de avaliações e reviews",
       "Relatório mensal de desempenho",
       "Suporte por WhatsApp",
     ],
@@ -29,10 +29,10 @@ const plans = [
     color: "#FBBC05",
     features: [
       "Tudo do Essencial",
-      "3 postagens semanais",
+      "Plan. de cronograma (3 dias/sem.)",
       "Estratégia de captação de avaliações",
-      "Remoção de avaliações falsas/difamatórias",
-      "Gestão de Q&A do perfil",
+      "Curadoria de remoção (reviews falsos)",
+      "Consultoria de Q&A do perfil",
       "Análise de concorrência mensal",
       "Relatório executivo quinzenal",
       "Gerente de conta dedicado",
@@ -100,11 +100,10 @@ export function Pricing() {
                 willChange: "opacity, transform",
                 transform: "translateZ(0)",
               }}
-              className={`relative rounded-2xl p-8 flex flex-col gap-6 transition-colors duration-300 ${
-                plan.highlight
-                  ? "bg-white/[0.04] border-2 shadow-[0_0_60px_rgba(251,188,5,0.08)]"
-                  : "bg-white/[0.02] border hover:bg-white/[0.03]"
-              }`}
+              className={`relative rounded-2xl p-8 flex flex-col gap-6 transition-colors duration-300 ${plan.highlight
+                ? "bg-white/[0.04] border-2 shadow-[0_0_60px_rgba(251,188,5,0.08)]"
+                : "bg-white/[0.02] border hover:bg-white/[0.03]"
+                }`}
             >
               {plan.tag && (
                 <div
@@ -154,11 +153,10 @@ export function Pricing() {
                 href={`https://wa.me/5519995748782?text=Olá!%20Quero%20contratar%20o%20plano%20${encodeURIComponent(plan.name)}.`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`group w-full mt-2 flex items-center justify-center gap-2 py-3.5 rounded-xl text-sm font-semibold transition-all duration-300 ${
-                  plan.highlight
-                    ? "text-black hover:opacity-90"
-                    : "text-white border border-white/10 hover:border-white/25 hover:bg-white/[0.03]"
-                }`}
+                className={`group w-full mt-2 flex items-center justify-center gap-2 py-3.5 rounded-xl text-sm font-semibold transition-all duration-300 ${plan.highlight
+                  ? "text-black hover:opacity-90"
+                  : "text-white border border-white/10 hover:border-white/25 hover:bg-white/[0.03]"
+                  }`}
                 style={
                   plan.highlight
                     ? { backgroundColor: plan.color, boxShadow: `0 0 30px ${plan.color}30` }
