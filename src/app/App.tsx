@@ -1,37 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router";
-import { Header } from "./components/Header";
-import { Hero } from "./components/Hero";
-import { Results } from "./components/Results";
-import { Services } from "./components/Services";
-import { Process } from "./components/Process";
-import { Pricing } from "./components/Pricing";
-import { Testimonials } from "./components/Testimonials";
-import { FAQ } from "./components/FAQ";
-import { Contact } from "./components/Contact";
-import { Footer } from "./components/Footer";
-import { WhatsAppButton } from "./components/WhatsAppButton";
-import { PrivacyPolicy } from "./components/PrivacyPolicy";
-import { TermsOfService } from "./components/TermsOfService";
-
-function HomePage() {
-  return (
-    <>
-      <Header />
-      <main>
-        <Hero />
-        <Results />
-        <Services />
-        <Process />
-        <Pricing />
-        <Testimonials />
-        <FAQ />
-        <Contact />
-      </main>
-      <Footer />
-      <WhatsAppButton />
-    </>
-  );
-}
+import { HomePage } from "./pages/Home";
+import { PrivacyPolicy } from "./pages/PrivacyPolicy";
+import { TermsOfService } from "./pages/TermsOfService";
 
 function App() {
   return (
