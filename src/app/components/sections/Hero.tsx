@@ -167,7 +167,7 @@ export function Hero() {
             variants={itemVariants}
             className="mt-16 pt-10 border-t border-white/[0.06]"
           >
-            <p className="text-xs text-gray-600 uppercase tracking-[0.2em] mb-7">
+            <p className="text-xs text-gray-400 uppercase tracking-[0.2em] mb-7">
               Empresas que dominam o Google com a Verano Company
             </p>
             <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-4">
@@ -181,7 +181,7 @@ export function Hero() {
               ].map((brand) => (
                 <span
                   key={brand}
-                  className="text-gray-600 text-sm font-medium tracking-wide hover:text-gray-400 transition-colors duration-200 cursor-default"
+                  className="text-gray-400 text-sm font-medium tracking-wide hover:text-gray-400 transition-colors duration-200 cursor-default"
                 >
                   {brand}
                 </span>

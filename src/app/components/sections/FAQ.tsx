@@ -74,7 +74,7 @@ export function FAQ() {
                     className="overflow-hidden"
                     id={`faq-answer-${i}`}
                   >
-                    <p className="text-gray-500 text-sm leading-relaxed pb-6 pr-12">
+                    <p className="text-gray-400 text-sm leading-relaxed pb-6 pr-12">
                       {faq.answer}
                     </p>
                   </motion.div>

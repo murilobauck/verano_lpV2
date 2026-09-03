@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { MotionConfigProvider } from "./components/common/MotionConfigProvider";
 import { SiteJsonLd } from "./components/common/SiteJsonLd";
 import "../styles/index.css";
 
@@ -42,7 +43,7 @@ export default function RootLayout({
         style={{ fontFamily: "var(--font-inter), system-ui, -apple-system, sans-serif" }}
       >
         <SiteJsonLd />
-        {children}
+        <MotionConfigProvider>{children}</MotionConfigProvider>
       </body>
     </html>
   );

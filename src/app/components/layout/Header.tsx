@@ -40,7 +40,7 @@ export function Header() {
               </div>
             </div>
             <span className="text-white tracking-tight transition-opacity duration-300 whitespace-nowrap">
-              Verano<span className="text-gray-500"> Company</span>
+              Verano<span className="text-gray-400"> Company</span>
             </span>
           </a>
 

@@ -102,7 +102,7 @@ export function Results() {
           <h2 className="text-3xl md:text-5xl text-white leading-tight tracking-tight">
             Resultados que constroem
             <br />
-            <span className="text-gray-500">referências no mercado.</span>
+            <span className="text-gray-400">referências no mercado.</span>
           </h2>
         </motion.div>
 
@@ -129,7 +129,7 @@ export function Results() {
                 />
               </p>
               <p className="text-white text-base font-semibold">{stat.label}</p>
-              <p className="text-gray-500 text-sm leading-relaxed">{stat.description}</p>
+              <p className="text-gray-400 text-sm leading-relaxed">{stat.description}</p>
             </motion.div>
           ))}
         </div>

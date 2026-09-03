@@ -82,9 +82,9 @@ export function Pricing() {
           <h2 className="text-3xl md:text-5xl text-white leading-tight tracking-tight mb-4">
             Invista em presença.
             <br />
-            <span className="text-gray-500">Colha clientes.</span>
+            <span className="text-gray-400">Colha clientes.</span>
           </h2>
-          <p className="text-gray-500 text-sm max-w-md mx-auto">
+          <p className="text-gray-400 text-sm max-w-md mx-auto">
             Contratos mensais sem fidelidade. Cancelamento a qualquer momento. Resultado ou seu dinheiro de volta nos primeiros 30 dias.
           </p>
         </motion.div>
@@ -127,10 +127,10 @@ export function Pricing() {
                 <div className="flex items-baseline gap-1 mb-2">
                   <span className="text-white text-4xl tracking-tight">{plan.price}</span>
                   {plan.period && (
-                    <span className="text-gray-500 text-sm">{plan.period}</span>
+                    <span className="text-gray-400 text-sm">{plan.period}</span>
                   )}
                 </div>
-                <p className="text-gray-500 text-sm leading-relaxed">{plan.description}</p>
+                <p className="text-gray-400 text-sm leading-relaxed">{plan.description}</p>
               </div>
 
               {/* Divider */}
@@ -178,7 +178,7 @@ export function Pricing() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.4 }}
-          className="text-center text-gray-600 text-xs mt-10"
+          className="text-center text-gray-400 text-xs mt-10"
         >
           Sem taxa de setup · Sem fidelidade mínima · Garantia de 30 dias ou reembolso integral
         </motion.p>

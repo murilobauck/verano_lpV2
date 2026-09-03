@@ -144,7 +144,7 @@ export function Services() {
             <h2 className="text-3xl md:text-5xl text-white leading-tight tracking-tight">
               Soluções que colocam
               <br />
-              <span className="text-gray-500">sua empresa no mapa.</span>
+              <span className="text-gray-400">sua empresa no mapa.</span>
             </h2>
           </motion.div>
 
@@ -200,11 +200,11 @@ export function Services() {
               </div>
 
               <div>
-                <p className="text-xs text-gray-600 font-mono mb-2">{service.number}</p>
+                <p className="text-xs text-gray-400 font-mono mb-2">{service.number}</p>
                 <h3 className="text-white text-lg font-semibold mb-3 group-hover:text-gray-100 transition-colors">
                   {service.title}
                 </h3>
-                <p className="text-gray-500 text-sm leading-relaxed">{service.description}</p>
+                <p className="text-gray-400 text-sm leading-relaxed">{service.description}</p>
               </div>
             </motion.div>
           ))}

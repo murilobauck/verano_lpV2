@@ -151,7 +151,7 @@ export function TermsContent() {
             </section>
 
             <section className="border-t border-white/[0.08] pt-8">
-              <p className="text-sm text-gray-500">
+              <p className="text-sm text-gray-400">
                 Ao contratar nossos serviços, você declara ter lido, compreendido e concordado com estes Termos de
                 Serviço e nossa Política de Privacidade.
               </p>

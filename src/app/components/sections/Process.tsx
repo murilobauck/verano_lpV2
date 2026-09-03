@@ -84,7 +84,7 @@ export function Process() {
             <h2 className="text-3xl md:text-5xl text-white leading-tight tracking-tight mb-6">
               Um processo
               <br />
-              <span className="text-gray-500">desenhado para</span>
+              <span className="text-gray-400">desenhado para</span>
               <br />
               resultados reais.
             </h2>
@@ -136,7 +136,7 @@ export function Process() {
                     <span className="text-xs font-mono" style={{ color: `${step.color}80` }}>{step.number}</span>
                     <h3 className="text-white text-xl font-semibold">{step.title}</h3>
                   </div>
-                  <p className="text-gray-500 text-sm leading-relaxed mb-4">{step.description}</p>
+                  <p className="text-gray-400 text-sm leading-relaxed mb-4">{step.description}</p>
                   <div className="inline-flex items-center gap-2">
                     <div
                       className="w-1.5 h-1.5 rounded-full"
