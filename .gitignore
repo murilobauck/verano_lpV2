@@ -41,3 +41,5 @@ pnpm-debug.log*
 # Planning artifacts (not part of the delivered project)
 specs/
 docs/
+.vercel
+.env*
