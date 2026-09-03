@@ -4,8 +4,7 @@ Site institucional da [Verano Company](https://www.veranocompany.com.br), agênc
 
 ## Stack
 
-- [Vite](https://vitejs.dev) 6 + [React](https://react.dev) 18
-- [react-router](https://reactrouter.com) 7
+- [Next.js](https://nextjs.org) 15 (App Router) + [React](https://react.dev) 19
 - [Tailwind CSS](https://tailwindcss.com) 4
 - [motion](https://motion.dev) para animações
 - [lucide-react](https://lucide.dev) para ícones
@@ -26,5 +25,3 @@ pnpm dev
 ```bash
 pnpm build
 ```
-
-Gera o build de produção em `dist/`.

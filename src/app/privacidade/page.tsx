@@ -1,8 +1,10 @@
+"use client";
+
 import { motion } from "motion/react";
 import { ArrowLeft } from "lucide-react";
 import { BreadcrumbJsonLd } from "@/app/components/common/BreadcrumbJsonLd";
 
-export function PrivacyPolicy() {
+export default function Page() {
   return (
     <div className="bg-black min-h-screen text-white">
       <BreadcrumbJsonLd path="/privacidade" label="Política de Privacidade" />
