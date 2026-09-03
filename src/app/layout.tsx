@@ -2,15 +2,11 @@ import type { Metadata } from "next";
 import { SiteJsonLd } from "./components/common/SiteJsonLd";
 import "../styles/index.css";
 
-const description =
-  "Posicionamos empresas locais no topo do Google Maps com estratégia, dados e execução de alto nível. Solicite o diagnóstico gratuito do seu perfil.";
-
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.veranocompany.com.br"),
-  title: "Verano Company | Agência de SEO Local e Google Maps",
-  description,
-  alternates: {
-    canonical: "https://www.veranocompany.com.br/",
+  title: {
+    template: "%s | Verano Company",
+    default: "Verano Company | Agência de SEO Local e Google Maps",
   },
   icons: {
     icon: "/favicon.svg",
@@ -18,9 +14,6 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: "Verano Company",
-    title: "Verano Company | Agência de SEO Local e Google Maps",
-    description,
-    url: "https://www.veranocompany.com.br/",
     locale: "pt_BR",
     images: [{ url: "/og.png", width: 1200, height: 630 }],
   },
