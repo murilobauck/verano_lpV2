@@ -112,7 +112,7 @@ export function Pricing() {
                   className="absolute -top-3.5 left-1/2 -translate-x-1/2 inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-bold"
                   style={{ backgroundColor: plan.color, color: "#000" }}
                 >
-                  <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor">
+                  <svg aria-hidden="true" width="11" height="11" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
                   </svg>
                   {plan.tag}
