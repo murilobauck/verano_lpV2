@@ -1,11 +1,30 @@
+# Verano Company — Landing Page
 
-  # Landing page para agência
+Site institucional da [Verano Company](https://www.veranocompany.com.br), agência de SEO local e posicionamento no Google Maps.
 
-  This is a code bundle for Landing page para agência. The original project is available at https://www.figma.com/design/liAR4H81kcCO3A9VyjTgWl/Landing-page-para-ag%C3%AAncia.
+## Stack
 
-  ## Running the code
+- [Vite](https://vitejs.dev) 6 + [React](https://react.dev) 18
+- [react-router](https://reactrouter.com) 7
+- [Tailwind CSS](https://tailwindcss.com) 4
+- [motion](https://motion.dev) para animações
+- [lucide-react](https://lucide.dev) para ícones
 
-  Run `npm i` to install the dependencies.
+Hospedado na [Vercel](https://vercel.com).
 
-  Run `npm run dev` to start the development server.
-  
+## Rodando localmente
+
+Este projeto usa [pnpm](https://pnpm.io) como gerenciador de pacotes.
+
+```bash
+pnpm install
+pnpm dev
+```
+
+## Build
+
+```bash
+pnpm build
+```
+
+Gera o build de produção em `dist/`.
