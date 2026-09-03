@@ -107,9 +107,13 @@ export function Hero() {
             </span>
           </motion.div>
 
-          {/* Headline */}
+          {/* Headline — LCP element: no opacity animation, only the y-translate,
+              so it doesn't wait on Framer Motion before counting as painted */}
           <motion.h1
-            variants={itemVariants}
+            variants={{
+              hidden: { y: 30 },
+              visible: { y: 0, transition: { duration: 0.7, ease: [0.25, 0.1, 0.25, 1] as const } },
+            }}
             className="text-5xl md:text-7xl lg:text-[82px] text-white leading-[1.05] tracking-[-0.03em] mb-7"
           >
             A primeira posição
