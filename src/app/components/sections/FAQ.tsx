@@ -48,6 +48,7 @@ export function FAQ() {
                   className="w-8 h-8 rounded-lg border border-white/10 flex items-center justify-center flex-shrink-0 group-hover:border-white/20 transition-colors"
                 >
                   <svg
+                    aria-hidden="true"
                     width="14"
                     height="14"
                     viewBox="0 0 14 14"
