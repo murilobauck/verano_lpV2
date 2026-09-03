@@ -1,6 +1,14 @@
 import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 import { SiteJsonLd } from "./components/common/SiteJsonLd";
 import "../styles/index.css";
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-inter",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.veranocompany.com.br"),
@@ -28,10 +36,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-BR">
+    <html lang="pt-BR" className={inter.variable}>
       <body
         className="bg-black min-h-screen text-white"
-        style={{ fontFamily: "'Inter', system-ui, -apple-system, sans-serif" }}
+        style={{ fontFamily: "var(--font-inter), system-ui, -apple-system, sans-serif" }}
       >
         <SiteJsonLd />
         {children}
