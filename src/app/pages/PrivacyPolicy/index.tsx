@@ -1,9 +1,11 @@
 import { motion } from "motion/react";
 import { ArrowLeft } from "lucide-react";
+import { BreadcrumbJsonLd } from "@/app/components/common/BreadcrumbJsonLd";
 
 export function PrivacyPolicy() {
   return (
     <div className="bg-black min-h-screen text-white">
+      <BreadcrumbJsonLd path="/privacidade" label="Política de Privacidade" />
       <div className="container mx-auto px-6 max-w-4xl py-20">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
