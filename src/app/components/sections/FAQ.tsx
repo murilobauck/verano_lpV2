@@ -39,6 +39,8 @@ export function FAQ() {
             >
               <button
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
+                aria-expanded={openIndex === i}
+                aria-controls={`faq-answer-${i}`}
                 className="w-full flex items-center justify-between py-6 text-left group"
               >
                 <span className="text-white text-sm md:text-base pr-8 group-hover:text-gray-200 transition-colors">
@@ -70,6 +72,7 @@ export function FAQ() {
                     exit={{ height: 0, opacity: 0 }}
                     transition={{ duration: 0.3 }}
                     className="overflow-hidden"
+                    id={`faq-answer-${i}`}
                   >
                     <p className="text-gray-500 text-sm leading-relaxed pb-6 pr-12">
                       {faq.answer}
