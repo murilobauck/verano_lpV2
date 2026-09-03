@@ -102,7 +102,7 @@ export function FAQ() {
                     transition={{ duration: 0.3 }}
                     className="overflow-hidden"
                   >
-                    <p className="text-gray-500 text-sm leading-relaxed pb-6 pr-12">
+                    <p className="text-gray-400 text-sm leading-relaxed pb-6 pr-12">
                       {faq.answer}
                     </p>
                   </motion.div>

@@ -53,7 +53,7 @@ export function Contact() {
               <h2 className="text-3xl md:text-5xl text-white leading-tight tracking-tight mb-5">
                 Pronto para liderar
                 <br />
-                <span className="text-gray-500">o Google na sua cidade?</span>
+                <span className="text-gray-400">o Google na sua cidade?</span>
               </h2>
               <p className="text-gray-400 text-base leading-relaxed">
                 Solicite seu diagnóstico gratuito. Nossa equipe analisa seu perfil e apresenta um plano de ação personalizado — sem compromisso.
@@ -71,7 +71,7 @@ export function Contact() {
                   <IconMail />
                 </div>
                 <div>
-                  <p className="text-xs text-gray-500 mb-0.5">E-mail</p>
+                  <p className="text-xs text-gray-400 mb-0.5">E-mail</p>
                   <p className="text-gray-200 text-sm group-hover:text-white transition-colors">
                     contato@veranocompany.com.br
                   </p>
@@ -88,7 +88,7 @@ export function Contact() {
                   <IconWhatsApp />
                 </div>
                 <div>
-                  <p className="text-xs text-gray-500 mb-0.5">WhatsApp</p>
+                  <p className="text-xs text-gray-400 mb-0.5">WhatsApp</p>
                   <p className="text-gray-200 text-sm group-hover:text-white transition-colors">
                     +55 (19) 99574-8782
                   </p>
@@ -100,7 +100,7 @@ export function Contact() {
                   <IconPin />
                 </div>
                 <div>
-                  <p className="text-xs text-gray-500 mb-0.5">Localização</p>
+                  <p className="text-xs text-gray-400 mb-0.5">Localização</p>
                   <p className="text-gray-200 text-sm">Campinas, SP — Atendimento remoto nacional</p>
                 </div>
               </div>
@@ -151,7 +151,7 @@ export function Contact() {
               <ArrowRight className="w-6 h-6 md:w-[18px] md:h-[18px] relative group-hover:translate-x-0.5 transition-transform" />
             </a>
 
-            <p className="text-gray-600 text-xs relative z-10">
+            <p className="text-gray-400 text-xs relative z-10">
               Atendimento de segunda a sexta, das 9h às 18h
             </p>
           </motion.div>

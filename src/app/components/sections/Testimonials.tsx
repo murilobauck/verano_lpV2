@@ -107,7 +107,7 @@ function TestimonialCard({ t }: { t: typeof testimonials[0] }) {
         </div>
         <div className="min-w-0">
           <p className="text-white text-sm font-semibold truncate">{t.name}</p>
-          <p className="text-gray-500 text-xs truncate">
+          <p className="text-gray-400 text-xs truncate">
             {t.role} · {t.company}
           </p>
         </div>
@@ -175,7 +175,7 @@ export function Testimonials() {
                 <h2 className="text-3xl md:text-5xl text-white leading-tight tracking-tight">
                   Empresas reais.
                   <br />
-                  <span className="text-gray-500">Resultados reais.</span>
+                  <span className="text-gray-400">Resultados reais.</span>
                 </h2>
               </div>
             </div>

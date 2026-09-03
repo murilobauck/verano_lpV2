@@ -52,10 +52,10 @@ export function Footer() {
                 </div>
               </div>
               <span className="text-white tracking-tight">
-                Verano<span className="text-gray-500"> Company</span>
+                Verano<span className="text-gray-400"> Company</span>
               </span>
             </a>
-            <p className="text-gray-500 text-sm leading-relaxed max-w-xs mb-6">
+            <p className="text-gray-400 text-sm leading-relaxed max-w-xs mb-6">
               Posicionamos empresas locais no topo do Google Maps com estratégia, dados e consultoria de alto nível.
             </p>
             <div className="flex items-center gap-3">
@@ -66,7 +66,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={social.label}
-                  className="w-9 h-9 rounded-xl bg-white/[0.04] border border-white/[0.06] flex items-center justify-center text-gray-500 hover:text-white hover:border-white/15 hover:bg-white/[0.08] transition-all duration-200"
+                  className="w-9 h-9 rounded-xl bg-white/[0.04] border border-white/[0.06] flex items-center justify-center text-gray-400 hover:text-white hover:border-white/15 hover:bg-white/[0.08] transition-all duration-200"
                 >
                   <social.Icon />
                 </a>
@@ -77,7 +77,7 @@ export function Footer() {
           {/* Links columns */}
           {Object.entries(footerLinks).map(([category, links]) => (
             <div key={category}>
-              <p className="text-xs text-gray-600 uppercase tracking-[0.18em] font-semibold mb-5">
+              <p className="text-xs text-gray-400 uppercase tracking-[0.18em] font-semibold mb-5">
                 {category}
               </p>
               <ul className="space-y-3">
@@ -85,7 +85,7 @@ export function Footer() {
                   <li key={link.label}>
                     <a
                       href={link.href}
-                      className="text-gray-500 text-sm hover:text-gray-200 transition-colors duration-200"
+                      className="text-gray-400 text-sm hover:text-gray-200 transition-colors duration-200"
                     >
                       {link.label}
                     </a>
@@ -98,12 +98,12 @@ export function Footer() {
 
         {/* Bottom bar */}
         <div className="pt-8 border-t border-white/[0.04] flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-gray-600 text-xs">
+          <p className="text-gray-400 text-xs">
             © 2026 Verano Company. Todos os direitos reservados.
           </p>
           <a
             href="#hero"
-            className="group inline-flex items-center gap-1.5 text-gray-600 text-xs hover:text-gray-300 transition-colors duration-200"
+            className="group inline-flex items-center gap-1.5 text-gray-400 text-xs hover:text-gray-300 transition-colors duration-200"
           >
             Voltar ao topo
             <ArrowUpRight size={12} className="group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-transform duration-200" />

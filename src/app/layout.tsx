@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { MotionConfigProvider } from "./components/common/MotionConfigProvider";
 import "../styles/index.css";
 
 export const metadata: Metadata = {
@@ -21,7 +22,7 @@ export default function RootLayout({
         className="bg-black min-h-screen text-white"
         style={{ fontFamily: "'Inter', system-ui, -apple-system, sans-serif" }}
       >
-        {children}
+        <MotionConfigProvider>{children}</MotionConfigProvider>
       </body>
     </html>
   );
