@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SiteJsonLd } from "./components/common/SiteJsonLd";
 import "../styles/index.css";
 
 export const metadata: Metadata = {
@@ -32,6 +33,7 @@ export default function RootLayout({
         className="bg-black min-h-screen text-white"
         style={{ fontFamily: "'Inter', system-ui, -apple-system, sans-serif" }}
       >
+        <SiteJsonLd />
         {children}
       </body>
     </html>
