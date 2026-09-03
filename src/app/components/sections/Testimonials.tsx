@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
 const testimonials = [
@@ -68,7 +69,7 @@ const testimonials = [
 
 function StarIcon({ size = 11 }: { size?: number }) {
   return (
-    <svg width={size} height={size} viewBox="0 0 24 24" fill="#FBBC05" stroke="none">
+    <svg aria-hidden="true" width={size} height={size} viewBox="0 0 24 24" fill="#FBBC05" stroke="none">
       <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
     </svg>
   );
@@ -98,11 +99,14 @@ function TestimonialCard({ t }: { t: typeof testimonials[0] }) {
 
       {/* Author */}
       <div className="flex items-center gap-3">
-        <div className="w-10 h-10 rounded-full overflow-hidden flex-shrink-0 ring-1 ring-white/10">
-          <img
+        <div className="w-10 h-10 rounded-full overflow-hidden flex-shrink-0 ring-1 ring-white/10 relative">
+          <Image
             src={t.img}
             alt={t.name}
-            className="w-full h-full object-cover object-top"
+            fill
+            sizes="40px"
+            loading="lazy"
+            className="object-cover object-top"
           />
         </div>
         <div className="min-w-0">
