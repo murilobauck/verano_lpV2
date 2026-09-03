@@ -35,3 +35,7 @@ pnpm-debug.log*
 .cache/
 .parcel-cache/
 .vite/
+
+# Planning artifacts (not part of the delivered project)
+specs/
+docs/
