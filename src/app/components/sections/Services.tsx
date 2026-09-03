@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "motion/react";
 
 /* Custom icon components for a unique, non-generic look */

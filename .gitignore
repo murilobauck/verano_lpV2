@@ -4,6 +4,8 @@ node_modules/
 # Build output
 dist/
 build/
+.next/
+next-env.d.ts
 
 # Environment variables
 .env
@@ -35,3 +37,7 @@ pnpm-debug.log*
 .cache/
 .parcel-cache/
 .vite/
+
+# Planning artifacts (not part of the delivered project)
+specs/
+docs/

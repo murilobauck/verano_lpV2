@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 
@@ -121,7 +123,7 @@ function TestimonialCard({ t }: { t: typeof testimonials[0] }) {
 
 export function Testimonials() {
   const scrollRef = useRef<HTMLDivElement>(null);
-  const animationRef = useRef<number>();
+  const animationRef = useRef<number | undefined>(undefined);
   const scrollPos = useRef(0);
 
   // Duplicate the items for infinite loop

@@ -1,7 +1,9 @@
+"use client";
+
 import { motion } from "motion/react";
 import { ArrowLeft } from "lucide-react";
 
-export function PrivacyPolicy() {
+export default function Page() {
   return (
     <div className="bg-black min-h-screen text-white">
       <div className="container mx-auto px-6 max-w-4xl py-20">
