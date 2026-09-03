@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
 const testimonials = [
@@ -98,11 +99,14 @@ function TestimonialCard({ t }: { t: typeof testimonials[0] }) {
 
       {/* Author */}
       <div className="flex items-center gap-3">
-        <div className="w-10 h-10 rounded-full overflow-hidden flex-shrink-0 ring-1 ring-white/10">
-          <img
+        <div className="w-10 h-10 rounded-full overflow-hidden flex-shrink-0 ring-1 ring-white/10 relative">
+          <Image
             src={t.img}
             alt={t.name}
-            className="w-full h-full object-cover object-top"
+            fill
+            sizes="40px"
+            loading="lazy"
+            className="object-cover object-top"
           />
         </div>
         <div className="min-w-0">

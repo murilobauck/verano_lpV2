@@ -64,7 +64,7 @@ export function Contact() {
             {/* Contact info */}
             <div className="space-y-5">
               <a
-                href="mailto:contato@veranocompany.com"
+                href="mailto:contato@veranocompany.com.br"
                 className="flex items-center gap-4 group"
               >
                 <div className="w-11 h-11 rounded-xl bg-[#4285F4]/10 flex items-center justify-center text-[#4285F4] flex-shrink-0 group-hover:bg-[#4285F4]/20 transition-colors">
