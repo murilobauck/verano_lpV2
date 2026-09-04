@@ -38,6 +38,10 @@ pnpm-debug.log*
 .parcel-cache/
 .vite/
 
+# Temp files
+temp/
+tsconfig.tsbuildinfo
+
 # Planning artifacts (not part of the delivered project)
 specs/
 docs/
