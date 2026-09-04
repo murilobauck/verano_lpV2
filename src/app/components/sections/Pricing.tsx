@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "motion/react";
+import { m } from "motion/react";
 import { Check, ArrowRight } from "lucide-react";
 
 const plans = [
@@ -69,7 +69,7 @@ export function Pricing() {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_100%,rgba(251,188,5,0.04)_0%,transparent_60%)]" />
 
       <div className="container mx-auto px-6 max-w-7xl relative z-10">
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -87,11 +87,11 @@ export function Pricing() {
           <p className="text-gray-400 text-sm max-w-md mx-auto">
             Contratos mensais sem fidelidade. Cancelamento a qualquer momento. Resultado ou seu dinheiro de volta nos primeiros 30 dias.
           </p>
-        </motion.div>
+        </m.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {plans.map((plan, i) => (
-            <motion.div
+            <m.div
               key={i}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -168,12 +168,12 @@ export function Pricing() {
                 {plan.cta}
                 <ArrowRight size={14} className="group-hover:translate-x-0.5 transition-transform" />
               </a>
-            </motion.div>
+            </m.div>
           ))}
         </div>
 
         {/* Trust note */}
-        <motion.p
+        <m.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -181,7 +181,7 @@ export function Pricing() {
           className="text-center text-gray-400 text-xs mt-10"
         >
           Sem taxa de setup · Sem fidelidade mínima · Garantia de 30 dias ou reembolso integral
-        </motion.p>
+        </m.p>
       </div>
     </section>
   );

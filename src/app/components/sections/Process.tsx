@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "motion/react";
+import { m } from "motion/react";
 import { ArrowRight } from "lucide-react";
 
 const steps = [
@@ -71,7 +71,7 @@ export function Process() {
       <div className="container mx-auto px-6 max-w-7xl relative z-10">
         <div className="flex flex-col lg:flex-row gap-20 items-start">
           {/* Left sticky */}
-          <motion.div
+          <m.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -99,12 +99,12 @@ export function Process() {
               Iniciar meu processo
               <ArrowRight size={15} className="group-hover:translate-x-1 transition-transform" />
             </a>
-          </motion.div>
+          </m.div>
 
           {/* Right steps */}
           <div className="lg:w-7/12 space-y-0">
             {steps.map((step, index) => (
-              <motion.div
+              <m.div
                 key={index}
                 initial={{ opacity: 0, x: 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -147,7 +147,7 @@ export function Process() {
                     </span>
                   </div>
                 </div>
-              </motion.div>
+              </m.div>
             ))}
           </div>
         </div>

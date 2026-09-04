@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "motion/react";
+import { m } from "motion/react";
 
 /* Custom icon components for a unique, non-generic look */
 function IconAudit({ color }: { color: string }) {
@@ -131,7 +131,7 @@ export function Services() {
 
       <div className="container mx-auto px-6 max-w-7xl relative z-10">
         <div className="flex flex-col lg:flex-row gap-16 mb-20">
-          <motion.div
+          <m.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -146,9 +146,9 @@ export function Services() {
               <br />
               <span className="text-gray-400">sua empresa no mapa.</span>
             </h2>
-          </motion.div>
+          </m.div>
 
-          <motion.div
+          <m.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -168,12 +168,12 @@ export function Services() {
                 Garantia de resultados mensuráveis nos primeiros 60 dias
               </span>
             </div>
-          </motion.div>
+          </m.div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-white/[0.04] rounded-2xl overflow-hidden border border-white/[0.04]">
           {services.map((service, index) => (
-            <motion.div
+            <m.div
               key={index}
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -206,7 +206,7 @@ export function Services() {
                 </h3>
                 <p className="text-gray-400 text-sm leading-relaxed">{service.description}</p>
               </div>
-            </motion.div>
+            </m.div>
           ))}
         </div>
       </div>

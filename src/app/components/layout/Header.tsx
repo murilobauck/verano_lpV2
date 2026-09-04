@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, AnimatePresence } from "motion/react";
+import { m, AnimatePresence } from "motion/react";
 import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 
@@ -83,7 +83,7 @@ export function Header() {
         {/* Mobile Menu */}
         <AnimatePresence>
           {isOpen && (
-            <motion.div
+            <m.div
               id="mobile-menu"
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
@@ -109,7 +109,7 @@ export function Header() {
                   Diagnóstico Gratuito
                 </a>
               </div>
-            </motion.div>
+            </m.div>
           )}
         </AnimatePresence>
       </div>

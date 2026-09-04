@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "motion/react";
+import { m } from "motion/react";
 import { ArrowLeft } from "lucide-react";
 import { BreadcrumbJsonLd } from "@/app/components/common/BreadcrumbJsonLd";
 
@@ -9,7 +9,7 @@ export function PrivacyContent() {
     <div className="bg-black min-h-screen text-white">
       <BreadcrumbJsonLd path="/privacidade" label="Política de Privacidade" />
       <div className="container mx-auto px-6 max-w-4xl py-20">
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -165,7 +165,7 @@ export function PrivacyContent() {
               </div>
             </section>
           </div>
-        </motion.div>
+        </m.div>
       </div>
     </div>
   );
