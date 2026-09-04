@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { TermsContent } from "./TermsContent";
+import { sharedOpenGraph } from "../shared-metadata";
 
 export const metadata: Metadata = {
   title: "Termos de Serviço",
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "/termos",
   },
   openGraph: {
+    ...sharedOpenGraph,
     title: "Termos de Serviço | Verano Company",
     url: "/termos",
   },

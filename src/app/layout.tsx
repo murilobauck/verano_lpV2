@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { MotionConfigProvider } from "./components/common/MotionConfigProvider";
 import { SiteJsonLd } from "./components/common/SiteJsonLd";
+import { sharedOpenGraph } from "./shared-metadata";
 import "../styles/index.css";
 
 const inter = Inter({
@@ -20,12 +21,7 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.svg",
   },
-  openGraph: {
-    type: "website",
-    siteName: "Verano Company",
-    locale: "pt_BR",
-    images: [{ url: "/og.png", width: 1200, height: 630 }],
-  },
+  openGraph: sharedOpenGraph,
   twitter: {
     card: "summary_large_image",
   },
