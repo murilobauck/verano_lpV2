@@ -5,7 +5,6 @@ const organization = {
   "@type": "Organization",
   "@id": "https://www.veranocompany.com.br/#organization",
   name: "Verano Company",
-  alternateName: ["Verano Co.", "Verano Co"],
   url: "https://www.veranocompany.com.br",
   logo: "https://www.veranocompany.com.br/logoVerano.png",
   description:

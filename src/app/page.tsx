@@ -13,7 +13,7 @@ import { WhatsAppButton } from "./components/layout/WhatsAppButton";
 import { sharedOpenGraph } from "./shared-metadata";
 
 const description =
-  "Posicionamos empresas locais no topo do Google Maps com estratégia, dados e execução de alto nível. Solicite o diagnóstico gratuito do seu perfil.";
+  "SEO Local e Google Ads para colocar sua empresa no topo do Google Maps. Acesso direto ao time sênior, sem taxa de setup. Diagnóstico gratuito.";
 
 export const metadata: Metadata = {
   description,
