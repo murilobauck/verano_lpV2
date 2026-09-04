@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { PrivacyContent } from "./PrivacyContent";
+import { sharedOpenGraph } from "../shared-metadata";
 
 export const metadata: Metadata = {
   title: "Política de Privacidade",
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
     canonical: "/privacidade",
   },
   openGraph: {
+    ...sharedOpenGraph,
     title: "Política de Privacidade | Verano Company",
     url: "/privacidade",
   },

@@ -10,6 +10,7 @@ import { FAQ } from "./components/sections/FAQ";
 import { Contact } from "./components/sections/Contact";
 import { Footer } from "./components/layout/Footer";
 import { WhatsAppButton } from "./components/layout/WhatsAppButton";
+import { sharedOpenGraph } from "./shared-metadata";
 
 const description =
   "Posicionamos empresas locais no topo do Google Maps com estratégia, dados e execução de alto nível. Solicite o diagnóstico gratuito do seu perfil.";
@@ -20,6 +21,7 @@ export const metadata: Metadata = {
     canonical: "https://www.veranocompany.com.br/",
   },
   openGraph: {
+    ...sharedOpenGraph,
     title: "Verano Company | Agência de SEO Local e Google Maps",
     description,
     url: "https://www.veranocompany.com.br/",
