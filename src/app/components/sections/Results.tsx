@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "motion/react";
+import { m } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 
 interface CounterProps {
@@ -89,7 +89,7 @@ export function Results() {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_50%,rgba(66,133,244,0.04)_0%,transparent_70%)]" />
 
       <div className="container mx-auto px-6 max-w-7xl relative z-10">
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -104,11 +104,11 @@ export function Results() {
             <br />
             <span className="text-gray-400">referências no mercado.</span>
           </h2>
-        </motion.div>
+        </m.div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-white/[0.04] rounded-2xl overflow-hidden border border-white/[0.04]">
           {stats.map((stat, i) => (
-            <motion.div
+            <m.div
               key={i}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -130,7 +130,7 @@ export function Results() {
               </p>
               <p className="text-white text-base font-semibold">{stat.label}</p>
               <p className="text-gray-400 text-sm leading-relaxed">{stat.description}</p>
-            </motion.div>
+            </m.div>
           ))}
         </div>
       </div>

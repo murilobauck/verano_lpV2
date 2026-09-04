@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "motion/react";
+import { m } from "motion/react";
 import { ArrowRight } from "lucide-react";
 
 const floatingStats = [
@@ -76,7 +76,7 @@ export function Hero() {
 
       {/* Floating stat bubbles — desktop only */}
       {floatingStats.map((stat, i) => (
-        <motion.div
+        <m.div
           key={i}
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -94,22 +94,22 @@ export function Hero() {
             <p className="text-white text-sm font-bold">{stat.value}</p>
             <p className="text-gray-400 text-xs">{stat.label}</p>
           </div>
-        </motion.div>
+        </m.div>
       ))}
 
       <div className="container mx-auto px-6 relative z-[5] text-center max-w-5xl pt-20 md:pt-0">
-        <motion.div variants={containerVariants} initial="hidden" animate="visible">
+        <m.div variants={containerVariants} initial="hidden" animate="visible">
           {/* Badge */}
-          <motion.div variants={itemVariants} className="mb-8 inline-flex">
+          <m.div variants={itemVariants} className="mb-8 inline-flex">
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm text-xs text-gray-400 uppercase tracking-[0.2em]">
               <span className="w-1.5 h-1.5 rounded-full bg-[#34A853] animate-pulse shadow-[0_0_6px_#34A853]" />
               Especialistas em Google My Business
             </span>
-          </motion.div>
+          </m.div>
 
           {/* Headline — LCP element: no opacity animation, only the y-translate,
               so it doesn't wait on Framer Motion before counting as painted */}
-          <motion.h1
+          <m.h1
             variants={{
               hidden: { y: 30 },
               visible: { y: 0, transition: { duration: 0.7, ease: [0.25, 0.1, 0.25, 1] as const } },
@@ -124,19 +124,19 @@ export function Hero() {
                 sorte.
               </span>
             </span>
-          </motion.h1>
+          </m.h1>
 
           {/* Sub */}
-          <motion.p
+          <m.p
             variants={itemVariants}
             className="text-base md:text-lg text-gray-400 mb-10 max-w-xl mx-auto leading-relaxed"
           >
             Posicionamos sua empresa no topo do{" "}
             <span className="text-white">Google Maps</span> com estratégia, dados e inteligência de alto nível. Resultados mensuráveis. Clientes qualificados.
-          </motion.p>
+          </m.p>
 
           {/* CTAs */}
-          <motion.div
+          <m.div
             variants={itemVariants}
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
@@ -160,10 +160,10 @@ export function Hero() {
             >
               Ver Resultados
             </a>
-          </motion.div>
+          </m.div>
 
           {/* Trust bar */}
-          <motion.div
+          <m.div
             variants={itemVariants}
             className="mt-16 pt-10 border-t border-white/[0.06]"
           >
@@ -187,8 +187,8 @@ export function Hero() {
                 </span>
               ))}
             </div>
-          </motion.div>
-        </motion.div>
+          </m.div>
+        </m.div>
       </div>
     </section>
   );

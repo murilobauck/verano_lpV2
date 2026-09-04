@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "motion/react";
+import { m } from "motion/react";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
@@ -164,7 +164,7 @@ export function Testimonials() {
 
       <div className="relative z-10">
         <div className="container mx-auto px-6 max-w-7xl">
-          <motion.div
+          <m.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -183,11 +183,11 @@ export function Testimonials() {
                 </h2>
               </div>
             </div>
-          </motion.div>
+          </m.div>
         </div>
 
         {/* Scrolling carousel */}
-        <motion.div
+        <m.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -207,7 +207,7 @@ export function Testimonials() {
               <TestimonialCard key={`${t.name}-${i}`} t={t} />
             ))}
           </div>
-        </motion.div>
+        </m.div>
       </div>
     </section>
   );

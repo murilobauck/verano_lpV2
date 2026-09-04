@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, AnimatePresence } from "motion/react";
+import { m, AnimatePresence } from "motion/react";
 import { useState } from "react";
 import { faqs } from "@/data/faq";
 
@@ -12,7 +12,7 @@ export function FAQ() {
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
 
       <div className="container mx-auto px-6 max-w-3xl relative z-10">
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -25,11 +25,11 @@ export function FAQ() {
           <h2 className="text-3xl md:text-5xl text-white leading-tight tracking-tight">
             Tire suas dúvidas
           </h2>
-        </motion.div>
+        </m.div>
 
         <div className="space-y-0">
           {faqs.map((faq, i) => (
-            <motion.div
+            <m.div
               key={i}
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -66,7 +66,7 @@ export function FAQ() {
               </button>
               <AnimatePresence>
                 {openIndex === i && (
-                  <motion.div
+                  <m.div
                     initial={{ height: 0, opacity: 0 }}
                     animate={{ height: "auto", opacity: 1 }}
                     exit={{ height: 0, opacity: 0 }}
@@ -77,10 +77,10 @@ export function FAQ() {
                     <p className="text-gray-400 text-sm leading-relaxed pb-6 pr-12">
                       {faq.answer}
                     </p>
-                  </motion.div>
+                  </m.div>
                 )}
               </AnimatePresence>
-            </motion.div>
+            </m.div>
           ))}
         </div>
       </div>

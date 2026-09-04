@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "motion/react";
+import { m } from "motion/react";
 import { ArrowRight } from "lucide-react";
 
 function IconMail() {
@@ -39,7 +39,7 @@ export function Contact() {
       <div className="container mx-auto px-6 max-w-7xl relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           {/* Left */}
-          <motion.div
+          <m.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -105,10 +105,10 @@ export function Contact() {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </m.div>
 
           {/* Right — WhatsApp CTA */}
-          <motion.div
+          <m.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -154,7 +154,7 @@ export function Contact() {
             <p className="text-gray-400 text-xs relative z-10">
               Atendimento de segunda a sexta, das 9h às 18h
             </p>
-          </motion.div>
+          </m.div>
         </div>
       </div>
     </section>
